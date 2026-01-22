@@ -42,7 +42,7 @@ void clean_toilet(void)
 
 void check_status(void)
 {
-	printf(1, "Fetching toilet data" , 20);
+	write(1, "Fetching toilet data" , 20);
 	sleep(1);
 	write(1, "." , 1);
 	sleep(5);
@@ -50,7 +50,7 @@ void check_status(void)
 	sleep(1);
 	write(1, ".\n" , 3);
 	sleep(1);
-	printf(1, "Please wait" , 11);
+	write(1, "Please wait" , 11);
 	sleep(1);
 	write(1, "." , 1);
 	sleep(5);
@@ -58,7 +58,7 @@ void check_status(void)
 	sleep(1);
 	write(1, ".\n" , 3);
 	sleep(1);
-	printf(1, "Toilet status:", 13);
+	write(1, "Toilet status:", 13);
 	sleep(1);
 	write(1, " " , 1);
 	sleep(5);

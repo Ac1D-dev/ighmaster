@@ -6,29 +6,66 @@
 
 void flush(void)
 {
-	printf("Flushing...\n");
+	write(1, "Flushing" , 8);
+	sleep(1);
+	write(1, "." , 1);
 	sleep(5);
+	write(1, "." , 2);
+	sleep(1);
+	write(1, ".\n" , 3);
+	sleep(1);
 }
 
 void use_toilet(void)
 {
-	printf("Using toilet...\n");
+	write(1, "Using toilet" , 12);
+	sleep(1);
+	write(1, "." , 1);
 	sleep(5);
+	write(1, "." , 2);
+	sleep(1);
+	write(1, ".\n" , 3);
+	sleep(1);
 }
 
 void clean_toilet(void)
 {
-	printf("Cleaning toilet...\n");
+	write(1, "Cleaning toilet" , 15);
+	sleep(1);
+	write(1, "." , 1);
 	sleep(5);
+	write(1, "." , 2);
+	sleep(1);
+	write(1, ".\n" , 3);
+	sleep(1);
 }
 
 void check_status(void)
 {
-	printf("Fetching toilet data...\n");
+	printf(1, "Fetching toilet data" , 20);
+	sleep(1);
+	write(1, "." , 1);
 	sleep(5);
-	printf("Please wait...\n");
+	write(1, "." , 2);
+	sleep(1);
+	write(1, ".\n" , 3);
+	sleep(1);
+	printf(1, "Please wait" , 11);
+	sleep(1);
+	write(1, "." , 1);
 	sleep(5);
-	printf("Toilet status: OK\n");
+	write(1, "." , 2);
+	sleep(1);
+	write(1, ".\n" , 3);
+	sleep(1);
+	printf(1, "Toilet status:", 13);
+	sleep(1);
+	write(1, " " , 1);
+	sleep(5);
+	write(1, "O" , 2);
+	sleep(1);
+	write(1, "k\n" , 3);
+	sleep(1);
 }
 
 int main(void)
